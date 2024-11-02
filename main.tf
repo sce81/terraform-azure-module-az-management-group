@@ -4,6 +4,6 @@ resource "azurerm_management_group" "main" {
 
 
   subscription_ids = [
-    data.azurerm_subscription.current.subscription_id,
+    local.subscription_id
   ]
 }
